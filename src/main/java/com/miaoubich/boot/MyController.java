@@ -11,7 +11,7 @@ public class MyController {
 		return "index";
 	}
 	
-	@GetMapping("/basictable")
+	@GetMapping("/basic-table")
 	public String getBasicTable() {
 		return "basic_table";
 	}
@@ -21,7 +21,7 @@ public class MyController {
 		return "buttons";
 	}
 	
-	@GetMapping("/component")
+	@GetMapping("/form-component")
 	public String getComponents() {
 		return "form_component";
 	}
@@ -59,5 +59,15 @@ public class MyController {
 	@GetMapping("/widgets")
 	public String getwidgets() {
 		return "widgets";
+	}
+	
+	@GetMapping("/blank")
+	public String getBlank() {
+		return "blank";
+	}
+	
+	@GetMapping("/404")
+	public String get404() {
+		return "404";
 	}
 }
