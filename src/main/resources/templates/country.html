@@ -75,17 +75,11 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<header class="panel-heading">
-							<!-- 							<i class="icon_cogs"></i> Action: -->
 							<div class="btn-group">
 								<button type="button" class="btn btn-primary"
 									data-toggle="modal" data-target="#addModal">
 									<i class="icon_plus_alt2"></i> Country
 								</button>
-								<!-- 								<a class="btn btn-success" href="#"> <i -->
-								<!-- 									class="icon_check_alt2"></i> -->
-								<!-- 								</a> <a class="btn btn-danger" href="#"> <i -->
-								<!-- 									class="icon_close_alt2"></i> -->
-								<!-- 								</a> -->
 							</div>
 						</header>
 					</div>
@@ -115,15 +109,13 @@
 										<td>
 											<div class="btn-group">
 												<a th:href="@{/country/findById/(id=${country.id})}"
-													id="editButton" class="btn btn-primary"> 
-													<i class="icon_pencil-edit"></i>
-												</a> 
-												<a class="btn btn-success" href="#"> 
-													<i class="icon_check_alt2"></i>
-												</a> 
-												<a th:href="@{/country/delete/(id=${country.id})}"
-													id="deleteButton" class="btn btn-danger"> 
-													<i class="icon_close_alt2"></i>
+													id="editButton" class="btn btn-primary"> <i
+													class="icon_pencil-edit"></i>
+												</a> <a href="#" id="detailsButton" class="btn btn-success">
+													<i class="icon_document_alt"></i>
+												</a> <a th:href="@{/country/delete/(id=${country.id})}"
+													id="deleteButton" class="btn btn-danger"> <i
+													class="icon_close_alt2"></i>
 												</a>
 											</div>
 										</td>
@@ -134,6 +126,7 @@
 						</section>
 					</div>
 				</div>
+				<!-- page end -->
 			</section>
 		</section>
 		<!--main content end-->
