@@ -12,7 +12,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.miaoubich.boot.models.Country;
 import com.miaoubich.boot.models.State;
+import com.miaoubich.boot.services.CountryService;
 import com.miaoubich.boot.services.StateService;
 
 @Controller
@@ -20,11 +22,15 @@ public class StateController {
 
 	@Autowired
 	private StateService stateService;
+	@Autowired
+	private CountryService countryService;
 
 	@GetMapping("/states")
 	public String displayStates(Model model) {
-
-	List<State> statesList = stateService.getStates();
+	List<Country> countriesList = countryService.getCountries();
+	List<State> statesList = stateService.getStates(); 
+	
+	model.addAttribute("countries", countriesList);
 	model.addAttribute("states", statesList);
 		return "state";
 	}

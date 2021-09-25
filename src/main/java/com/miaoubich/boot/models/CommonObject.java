@@ -8,6 +8,15 @@ import javax.persistence.MappedSuperclass;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+
+@Data
+@EqualsAndHashCode(callSuper=false)
+@NoArgsConstructor
+@AllArgsConstructor
 @MappedSuperclass
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 public class CommonObject extends Auditable<String>{
@@ -18,6 +27,7 @@ public class CommonObject extends Auditable<String>{
 	private String description;
 	private String details;
 	
+	/*
 	public CommonObject() {
 		
 	}
@@ -56,6 +66,5 @@ public class CommonObject extends Auditable<String>{
 	public String toString() {
 		return "CommonObject [id=" + id + ", description=" + description + ", details=" + details + "]";
 	}
-	
-	
+	*/
 }

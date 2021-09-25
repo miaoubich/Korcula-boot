@@ -42,6 +42,8 @@ public class Location {
 		
 	private String city;
 	private String address;
+	
+	/*Because we are using lombok getters and setters are auto-generated
 	public String getDescription() {
 		return description;
 	}
@@ -78,4 +80,5 @@ public class Location {
 	public void setAddress(String address) {
 		this.address = address;
 	}
+	*/
 }

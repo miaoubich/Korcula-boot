@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.miaoubich.boot.models.VehicleType;
 
 @Repository
-public interface VehicleTpeRepository extends JpaRepository<VehicleType, Integer> {
+public interface VehicleTypeRepository extends JpaRepository<VehicleType, Integer> {
 
 }

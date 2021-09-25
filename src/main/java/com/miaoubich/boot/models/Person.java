@@ -51,6 +51,7 @@ public class Person {
 	private String mobile;
 	private String email;
 	private String photo;
+	/*
 	public String getFirstname() {
 		return firstname;
 	}
@@ -153,4 +154,5 @@ public class Person {
 	public void setPhoto(String photo) {
 		this.photo = photo;
 	}
+	*/
 }
